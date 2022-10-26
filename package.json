@@ -1,0 +1,41 @@
+{
+    "name": "pharastar-dev-frontend",
+    "version": "1.0.0",
+    "description": "https://pharastar.dev website",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "test": "vitest",
+        "coverage": "vitest run --coverage",
+        "preview": "vite preview",
+        "format": "prettier --write \"src/**/*.js\" \"src/**/*.html\" \"src/**/*.scss\"",
+        "lint": "./node_modules/.bin/eslint .",
+        "licenseCheck": "license-check-and-add check -f ./licenseConfig.json",
+        "license": "license-check-and-add add -f ./licenseConfig.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/PharaStarLLC/pharastar-dev-frontend.git"
+    },
+    "keywords": [
+        "pharastar"
+    ],
+    "author": "LuciferMorningstarDev",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/PharaStarLLC/pharastar-dev-frontend/issues"
+    },
+    "homepage": "https://github.com/PharaStarLLC/pharastar-dev-frontend#readme",
+    "devDependencies": {
+        "c8": "^7.12.0",
+        "eslint": "^8.26.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "license-check-and-add": "^4.0.5",
+        "prettier": "^2.7.1",
+        "sass": "^1.55.0",
+        "vite": "^3.2.0",
+        "vitest": "^0.24.3"
+    }
+}

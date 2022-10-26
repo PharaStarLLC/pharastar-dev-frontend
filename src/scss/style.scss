@@ -1,0 +1,109 @@
+@import 'normalize';
+
+// site prop
+.logo {
+    position: absolute;
+    z-index: 0;
+    width: 90vh;
+    top: 50%;
+    left: 50%;
+
+    opacity: 0.2;
+
+    translate: -50% -50%;
+
+    animation: rotateLogo 9s infinite ease-in-out;
+}
+
+.text {
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    color: silver;
+
+    align-items: center;
+    justify-content: space-around;
+
+    max-width: 50vw;
+
+    text-align: center;
+
+    h1 {
+        text-shadow: 1px 1px $accent;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text {
+        max-width: 80vw;
+    }
+    .logo {
+        width: 90vw;
+    }
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: $ciOrange;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        min-width: 50vw;
+
+        list-style: none;
+
+        .nav-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            margin-right: 10px;
+            padding: 5px;
+
+            height: 45px;
+            border: 1px solid silver;
+
+            &:hover {
+                border: 1px solid gray;
+            }
+        }
+
+        .nav-link {
+            color: $ciBack;
+            font-size: 150%;
+            text-decoration: none;
+
+            padding: auto;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+@keyframes rotateLogo {
+    0% {
+        rotate: 0;
+    }
+    50% {
+        rotate: 360deg;
+    }
+    100% {
+        rotate: 0;
+    }
+}
